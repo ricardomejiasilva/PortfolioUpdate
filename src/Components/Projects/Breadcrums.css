@@ -1,0 +1,25 @@
+.breadcrumsContainer {
+  margin-top: 51px;
+  display: flex;
+  gap: 8px;
+}
+.breadcrumsContainer p,
+a {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.activeCrums {
+  color: #0085ff !important;
+}
+
+@media only screen and (max-width: 688px) {
+  .breadcrumsContainer p,
+  a {
+    font-size: 16px;
+  }
+}

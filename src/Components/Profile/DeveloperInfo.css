@@ -1,0 +1,142 @@
+.infoContainer {
+  padding-left: 50px;
+}
+
+.infoContainer h3 {
+  color: #212121;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 71.5px */
+}
+
+.infoContainer h5 {
+  color: #0085ff;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 44.8px */
+}
+
+.infoContainer h6 {
+  color: #212121;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 36.8px */
+}
+
+.profileGap {
+  align-items: center;
+}
+
+.descriptionBox {
+  margin-top: 20px;
+  margin-bottom: 28px;
+}
+
+.descriptionBox p {
+  padding-left: 20px;
+  color: #212121;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+}
+
+.experienceContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.experience {
+  border-radius: 20px;
+  border: 1px solid #dcdce1;
+  background: #fff;
+  padding: 18px;
+}
+
+.experience div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.experience div p:nth-child(1) {
+  color: #212121;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 32.2px */
+}
+
+.experience p {
+  color: #212121;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+}
+
+.experience span {
+  color: #757575;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.experience div p:nth-child(2) {
+  color: #0085ff;
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 25.6px */
+}
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  .profileGap {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .infoContainer {
+    padding-left: unset;
+  }
+  .infoContainer h3 {
+    padding-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 688px) {
+  .profileGap {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .infoContainer {
+    padding-left: unset;
+  }
+  .infoContainer h3 {
+    font-size: 30px;
+    padding-top: 25px;
+  }
+  .infoContainer h5 {
+    font-size: 20px;
+  }
+  .descriptionBox p {
+    font-size: 14px;
+    padding-left: 12px;
+  }
+  .experience div p:nth-child(1) {
+    font-size: 16px;
+  }
+  .experience div p:nth-child(2) {
+    font-size: 11px;
+  }
+  .experience p {
+    font-size: 14px;
+  }
+  .experience span {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,91 @@
+.navbarContainer {
+  margin: 0px;
+  padding: 25px 0px 0px 0px;
+}
+
+.navbarContainer a {
+  color: white;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.dot {
+  background: linear-gradient(90deg, #00b4db 0%, #0083b0 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.nav-item a {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.nav-item a:hover {
+  color: #0085ff !important;
+}
+
+.navbar-brand:hover {
+  color: white;
+}
+.menuItems {
+  margin-left: 100px;
+  display: flex;
+  gap: 50px;
+}
+
+.contactMeBtn {
+  width: 148px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #fff;
+
+  color: #202020;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  transition: 0.3s ease;
+}
+
+.contactMeBtn:hover {
+  background-color: #5285ff;
+  color: white;
+}
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  .menuItems {
+    margin-left: unset;
+    display: flex;
+    gap: unset;
+  }
+  .navbar-collapse {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 688px) {
+  .navbar-brand {
+    font-size: 25px;
+  }
+  .menuItems {
+    margin-left: unset;
+    display: flex;
+    gap: unset;
+  }
+  .navbar-collapse {
+    text-align: center;
+  }
+}

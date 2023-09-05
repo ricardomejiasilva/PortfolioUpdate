@@ -1,0 +1,138 @@
+.videoBannerContainer h3 {
+  text-align: center;
+  color: #212121;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 71.5px */
+  margin-bottom: 8px;
+}
+.videoBannerContainer h6 {
+  color: #0085ff;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 44.8px */
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.videoContainer {
+  max-height: 500px;
+  border-radius: 20px;
+  margin-bottom: 37px;
+  position: relative;
+}
+.videoContainer img {
+  object-fit: contain;
+}
+
+.featuredOnContainer h5 {
+  color: #212121;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 36.8px */
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.newsContainer {
+  height: 140px;
+  border-radius: 20px;
+  border: 1px solid #dcdce1;
+  background: #fff;
+}
+.newsBox {
+  gap: 30px;
+}
+
+.newsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.workExperienceContainer {
+  margin-top: 37px;
+}
+
+.workExperienceContainer h5 {
+  color: #212121;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 36.8px */
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.workExpContainer {
+  height: 140px;
+  border-radius: 20px;
+  border: 1px solid #dcdce1;
+  background: #fff;
+  padding: 25px;
+}
+
+.workExpContainer h6 {
+  color: #0085ff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 25.6px */
+}
+.workExpContainer h5 {
+  color: #212121;
+  margin-top: 15px !important;
+  margin-bottom: 2px !important;
+  font-size: 23px !important;
+  text-align: unset;
+  font-weight: 700;
+  line-height: 140%; /* 32.2px */
+}
+
+.workExpContainer span {
+  color: #757575;
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.playIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 688px) {
+  .videoBannerContainer h3 {
+    font-size: 30px;
+  }
+  .videoBannerContainer h6 {
+    font-size: 20px;
+  }
+  .featuredOnContainer h5 {
+    font-size: 18px;
+  }
+  .workExperienceContainer h5 {
+    font-size: 18px;
+  }
+  .workExpContainer h6 {
+    font-size: 11px;
+  }
+  .workExpContainer h5 {
+    font-size: 16px !important;
+  }
+
+  .workExpContainer p {
+    font-size: 14px;
+  }
+  .workExpContainer span {
+    font-size: 12px;
+  }
+}

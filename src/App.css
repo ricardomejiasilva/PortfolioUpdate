@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+body {
+  font-family: Space Grotesk;
+}
+.container {
+  max-width: 1170px;
+}
+
+.navbar-toggler {
+  background-image: url("../src/assets/navButton.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.navbar-toggler-icon {
+  background-image: unset;
+}
+
+.notFocus:focus {
+  color: #0085ff;
+}
+
+.navbar-brand:focus {
+  color: white !important;
+}
+
