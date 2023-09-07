@@ -1,7 +1,6 @@
 import React from "react";
 import WorksCard from "./WorksCard";
 import WingAi from "../../assets/mobileapps1.png";
-import Web from "../../assets/webstaurantcard.png";
 
 const MobileApps = () => {
   const cardContent = [
@@ -13,7 +12,7 @@ const MobileApps = () => {
     },
     {
       id:"webstaurantstore",
-      image: Web,
+      image: "https://i.postimg.cc/5NvDSSjZ/Group-1171280986.png",
       title: "WebstaurantStore",
       skill: "React Native App",
     },
