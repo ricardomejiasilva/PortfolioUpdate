@@ -1,6 +1,6 @@
 import React from "react";
 import "./Content.css";
-import Wingai from "../../assets/Wingai.png";
+import Wingai from "../../assets/WingAI.png";
 import Adobe from "../../assets/Adobe.png";
 import Apple from "../../assets/Apple.png";
 import Chipotle from "../../assets/Chipo.png";
