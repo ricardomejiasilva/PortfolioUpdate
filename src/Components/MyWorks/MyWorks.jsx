@@ -6,7 +6,7 @@ import Emails from "./Emails";
 
 const MyWorks = () => {
   return (
-    <div id="project" className="myWorksContainer">
+    <div id="project" className="myWorksContainer pad">
       <div className="container">
         <h3>My Works</h3>
         <MobileApps />

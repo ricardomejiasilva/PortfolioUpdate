@@ -33,7 +33,7 @@
 }
 
 .nav-item a:hover {
-  color: #0085ff !important;
+  color: linear-gradient(90deg, #31a8ff 0%, #0085ff 100%);
 }
 
 .navbar-brand:hover {
@@ -51,17 +51,16 @@
   flex-shrink: 0;
   border-radius: 10px;
   background: #fff;
-
   color: #202020;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  transition: 0.3s ease;
+  transition: .3s ease;
 }
 
 .contactMeBtn:hover {
-  background-color: #5285ff;
+  background: linear-gradient(90deg, #31a8ff 0%, #0085ff);
   color: white;
 }
 

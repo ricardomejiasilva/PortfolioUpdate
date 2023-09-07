@@ -60,7 +60,9 @@ const SkillsInfo = () => {
             I have an extensive working knowledge of application and web
             development.{" "}
           </p>
-          <button className="btn">Get in Touch</button>
+          <a href="mailto: ricardo_mejia1996.com">
+            <button className="btn">Get in Touch</button>
+          </a>
         </div>
       </div>
       <div className="col-12 col-lg-6  m-0 p-0">

@@ -2,7 +2,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="bannerContainer container">
+    <div className="bannerContainer container pad">
       <h1>Crafting captivating digital experiences that inspire and engage.</h1>
       <p className="mx-auto">
         Welcome to my world of mobile and web development, where innovation

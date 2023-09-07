@@ -23,6 +23,10 @@ body {
   max-width: 1170px;
 }
 
+.row {
+  padding: 0 !important;
+}
+
 .navbar-toggler {
   background-image: url("../src/assets/navButton.png");
   background-repeat: no-repeat;
@@ -35,10 +39,21 @@ body {
 }
 
 .notFocus:focus {
-  color: #0085ff;
+  background: linear-gradient(90deg, #31a8ff 0%, #0085ff 100%);
 }
 
 .navbar-brand:focus {
   color: white !important;
 }
+
+.pad {
+  padding: 0 40px;
+}
+
+@media only screen and (max-width: 688px) { 
+  .pad {
+    padding: 0 20px;
+  }
+}
+
 

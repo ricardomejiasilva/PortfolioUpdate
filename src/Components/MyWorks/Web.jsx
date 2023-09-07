@@ -7,22 +7,22 @@ import web3 from "../../assets/monitor3.png";
 const Web = () => {
   const cardContent = [
     {
-      id: "web-1",
+      id: "clark",
       image: web1,
       title: "Clark Associates",
-      skill: "Company page",
+      skill: "Company Page",
     },
     {
-      id: "web-2",
+      id: "comfy",
       image: web2,
-      title: "WebstaurantStore",
-      skill: "JavaScript App",
+      title: "Comfy Store",
+      skill: "E-commerce App",
     },
     {
-      id: "web-3",
+      id: "new-roots",
       image: web3,
       title: "New Roots",
-      skill: "Landing Page",
+      skill: "Product Page",
     },
   ];
   return (

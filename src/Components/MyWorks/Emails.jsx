@@ -7,19 +7,19 @@ import web6 from "../../assets/monitor6.png";
 const Emails = () => {
   const cardContent = [
     {
-      id: "emails-1",
+      id: "adobe",
       image: web4,
       title: "Adobe",
       skill: "HTML Email",
     },
     {
-      id: "emails-2",
+      id: "apple",
       image: web5,
       title: "Apple",
       skill: "HTML Email",
     },
     {
-      id: "emails-3",
+      id: "chipotle",
       image: web6,
       title: "Chipotle",
       skill: "HTML Email",

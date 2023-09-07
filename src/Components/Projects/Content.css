@@ -27,7 +27,8 @@
 
 .imageContainer {
   max-height: 738px;
-  margin-top: 55px;
+  margin-top: 20px;
+  margin-bottom: 55px !important;
 }
 
 .imageContainer img {
@@ -45,34 +46,26 @@
   margin-bottom: 130px;
 }
 
-.buttonContainer button:nth-child(1) {
+.buttonContainer button {
   width: 329px;
   height: 60px;
   flex-shrink: 0;
   border-radius: 12px;
-  background: linear-gradient(90deg, #31a8ff 0%, #0085ff 100%);
-
-  color: #fff;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 
-.buttonContainer button:nth-child(2) {
-  width: 329px;
-  height: 60px;
-  flex-shrink: 0;
+.btn-1 {
+  background: linear-gradient(90deg, #31a8ff 0%, #0085ff 100%);
+  color: #fff;
+}
 
-  border-radius: 12px;
+.btn-2{
   border: 1px solid #dcdce1;
   background: #fff;
-
   color: #666770;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
 }
 
 @media only screen and (max-width: 688px) {
@@ -96,6 +89,7 @@
 
   .imageContainer {
     margin-top: 30px;
+    margin-bottom: 24px !important;
   }
 
   .buttonContainer button:nth-child(1) {

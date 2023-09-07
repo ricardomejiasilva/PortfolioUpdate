@@ -1,6 +1,6 @@
 import React from "react";
 import videoBanner from "../../assets/videoImage.png";
-import videoIcon from "../../assets/playIcon.png";
+import videoIcon from "../../assets/play.png";
 
 const VideoBanner = () => {
   return (

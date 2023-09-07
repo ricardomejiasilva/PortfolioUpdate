@@ -2,8 +2,9 @@ import React from "react";
 import "./Header.css";
 import { Link, useLocation } from "react-router-dom";
 
-const Header = () => {
+const Header = ({project = false}) => {
   const { pathname } = useLocation();
+  console.log(pathname);
 
   return (
     <div className="container ">
@@ -12,7 +13,7 @@ const Header = () => {
           <Link
             className="navbar-brand"
             to="/"
-            style={{ color: `${pathname === "/project" && "#000"}` }}
+            style={{ color: `${pathname !== "/" && "#000"}` }}
           >
             PortFolio<span className="dot">.</span>
           </Link>
@@ -34,7 +35,7 @@ const Header = () => {
                   className="nav-link notFocus "
                   aria-current="page"
                   to="#"
-                  style={{ color: `${pathname === "/project" && "#000"}` }}
+                  style={{ color: `${pathname !== "/" && "#000"}` }}
                 >
                   Home
                 </Link>
@@ -43,7 +44,7 @@ const Header = () => {
                 <Link
                   className="nav-link notFocus"
                   to="#"
-                  style={{ color: `${pathname === "/project" && "#000"}` }}
+                  style={{ color: `${pathname !== "/" && "#000"}` }}
                 >
                   Skill
                 </Link>
@@ -52,7 +53,7 @@ const Header = () => {
                 <a
                   className="nav-link notFocus"
                   href="#project"
-                  style={{ color: `${pathname === "/project" && "#000"}` }}
+                  style={{ color: `${pathname !== "/" && "#000"}` }}
                 >
                   Project
                 </a>
@@ -61,25 +62,26 @@ const Header = () => {
                 <Link
                   className="nav-link notFocus"
                   to="#"
-                  style={{ color: `${pathname === "/project" && "#000"}` }}
+                  style={{ color: `${pathname !== "/" && "#000"}` }}
                 >
                   Contact
                 </Link>
               </li>
             </ul>
-
-            <button
-              className="btn contactMeBtn"
-              style={{
-                color: `${pathname === "/project" && "#FFF"}`,
-                background: `${
-                  pathname === "/project" &&
-                  "linear-gradient(90deg, #31A8FF 0%, #0085FF 100%)"
-                }`,
-              }}
-            >
-              Contact Me
-            </button>
+            <a href="mailto: ricardo_mejia1996.com">
+              <button
+                className="btn contactMeBtn"
+                style={{
+                  color: `${pathname === "/project" && "#FFF"}`,
+                  background: `${
+                    pathname === "/project" &&
+                    "linear-gradient(90deg, #31A8FF 0%, #0085FF 100%)"
+                  }`,
+                }}
+              >
+                Contact Me
+              </button>
+            </a>
           </div>
         </div>
       </nav>

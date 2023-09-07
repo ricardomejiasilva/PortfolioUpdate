@@ -7,7 +7,7 @@ const Breadcrums = () => {
   return (
     <div className="breadcrumsContainer">
       <p>
-        <Link to="/">Home</Link>
+        <Link to="/#project">Home</Link>
       </p>
       <img src={arrows} alt="" />
       <p className="activeCrums">Project</p>
