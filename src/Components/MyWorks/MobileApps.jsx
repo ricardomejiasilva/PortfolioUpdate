@@ -1,7 +1,7 @@
 import React from "react";
 import WorksCard from "./WorksCard";
 import image1 from "../../assets/mobileapps1.png";
-import image2 from "../../assets/webstaurantCard.png";
+import image2 from "../../assets/WebstaurantCard.png";
 
 const MobileApps = () => {
   const cardContent = [
