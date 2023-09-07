@@ -1,19 +1,19 @@
 import React from "react";
 import WorksCard from "./WorksCard";
-import image1 from "../../assets/mobileapps1.png";
-import image2 from "../../assets/WebstaurantCard.png";
+import WingAi from "../../assets/mobileapps1.png";
+import Web from "../../assets/webstaurantcard.png";
 
 const MobileApps = () => {
   const cardContent = [
     {
       id:"wingai",
-      image: image1,
+      image: WingAi,
       title: "WingAI",
       skill: "React Native App",
     },
     {
       id:"webstaurantstore",
-      image: image2,
+      image: Web,
       title: "WebstaurantStore",
       skill: "React Native App",
     },
