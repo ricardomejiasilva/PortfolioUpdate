@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Header from "../Components/Header/Header";
+import Nav from "../Components/Nav/Nav";
 import { Outlet, useLocation } from "react-router-dom";
 import Footer from "../Components/Footer/Footer";
 
@@ -11,7 +11,7 @@ const Main = () => {
   }, [pathname]);
   return (
     <>
-      {pathname === "/project" && <Header />}
+      {pathname === "/project" && <Nav />}
       <Outlet />
       <Footer />
     </>

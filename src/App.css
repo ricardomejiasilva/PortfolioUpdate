@@ -38,9 +38,6 @@ body {
   background-image: unset;
 }
 
-.notFocus:focus {
-  background: linear-gradient(90deg, #31a8ff 0%, #0085ff 100%);
-}
 
 .navbar-brand:focus {
   color: white !important;

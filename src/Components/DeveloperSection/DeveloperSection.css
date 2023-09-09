@@ -29,7 +29,7 @@
 
 .featuredOnContainer h5 {
   color: #212121;
-  font-size: 23px;
+  font-size: 35px;
   font-style: normal;
   font-weight: 700;
   line-height: 160%; /* 36.8px */
@@ -71,14 +71,19 @@
   margin-top: 70px;
 }
 
-.workExperienceContainer h5 {
+
+.workExperienceContainer h5, .workExperienceContainer h4 {
   color: #212121;
-  font-size: 23px;
+  font-size: 35px;
   font-style: normal;
   font-weight: 700;
   line-height: 160%; /* 36.8px */
   text-align: center;
   margin-bottom: 15px;
+}
+
+.workExperienceContainer h4 {
+  font-size: 23px;
 }
 
 .workExpContainer {

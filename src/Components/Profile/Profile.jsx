@@ -1,13 +1,11 @@
 import React from "react";
-import DeveloperInfo from "./DeveloperInfo";
 import SkillsInfo from "./SkillsInfo";
 import DeveloperSection from "../DeveloperSection/DeveloperSection";
 
 const Profile = () => {
   return (
-    <div className="developerContainer pad" style={{ marginTop: "130px" }}>
+    <div id="about" className="developerContainer pad" style={{ marginTop: "130px" }}>
       <div className="container ">
-        {/* <DeveloperInfo /> */}
         <DeveloperSection />
         <SkillsInfo />
       </div>

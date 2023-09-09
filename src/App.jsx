@@ -1,13 +1,16 @@
 import "./App.css";
-import { RouterProvider } from "react-router-dom";
-import { router } from "./Routes/routes";
+import { HashRouter, Route, Routes } from "react-router-dom"; 
+import Project from "./Pages/Project";
+import Home from "./Pages/Home";
 
 function App() {
-
   return (
-    <>
-      <RouterProvider router={router} />
-    </>
+    <HashRouter hashType="noslash">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/project/:id" element={<Project />} />
+      </Routes>
+    </HashRouter>
   );
 }
 

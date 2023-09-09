@@ -3,17 +3,11 @@ import rightArrow from "../../assets/ArrowRight.png";
 import { Link } from "react-router-dom";
 
 const WorksCard = ({ content }) => {
-  console.log(content.id);
   return (
     <Link to={`/project/${content.id}`}>
       <div className="workCardContainer">
         <div className="cardImageContainer">
           <img
-            style={
-              content.id === "webstaurantstore"
-                ? { position: "relative", top: -16 }
-                : {}
-            }
             src={content?.image}
             alt=""
             className="img-fluid"

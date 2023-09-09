@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -8,10 +9,10 @@ const Footer = () => {
         PortFolio<span className="dot">.</span>
       </h3>
       <div className="navLinkContainer">
-        <a href="#">Home</a>
-        <a href="#">Skill</a>
-        <a href="#">Project</a>
-        <a href="#">Contact</a>
+        <Link to="/">Home</Link>
+        <Link to="/#about">Skill</Link>
+        <Link to="/#project">Projects</Link>
+        <a href="mailto: ricardo_mejia19966@live.com">Contact</a>
       </div>
       <hr className="footerLine" />
       <div className="copyRightsContainer">

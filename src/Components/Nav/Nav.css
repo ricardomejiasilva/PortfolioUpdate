@@ -12,6 +12,11 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  transition: 0.3s;
+}
+
+.navbar-brand:hover {
+  color: #0085ff !important;
 }
 
 .dot {
@@ -30,16 +35,26 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  transition: 0.3s;
 }
 
 .nav-item a:hover {
-  color: linear-gradient(90deg, #31a8ff 0%, #0085ff 100%);
+  color: #0085ff !important;
+}
+
+.nav-link .active {
+  color: white;
+}
+
+.navbar-nav .nav-link:active {
+  color: white !important;
 }
 
 .navbar-brand:hover {
   color: white;
 }
 .menuItems {
+  align-items: center;
   margin-left: 100px;
   display: flex;
   gap: 50px;

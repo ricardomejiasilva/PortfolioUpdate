@@ -55,11 +55,17 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  transition: 0.5s;
 }
 
 .btn-1 {
   background: linear-gradient(90deg, #31a8ff 0%, #0085ff 100%);
   color: #fff;
+}
+
+.btn-2:hover {
+  border-color: #0085ff;
+  color: #0085ff;
 }
 
 .btn-2{

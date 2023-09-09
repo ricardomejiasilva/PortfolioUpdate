@@ -21,6 +21,11 @@
   font-weight: 500;
   line-height: normal;
   text-decoration: none;
+  transition: 0.3s;
+}
+
+.navLinkContainer a:hover {
+  color: #0085ff;
 }
 
 .policyContainer {

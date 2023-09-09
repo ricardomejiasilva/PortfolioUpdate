@@ -17,6 +17,14 @@ a {
   color: #0085ff !important;
 }
 
+.home {
+  transition: 0.3s;
+}
+
+.home:hover {
+  color: #0085ff !important;
+}
+
 @media only screen and (max-width: 688px) {
   .breadcrumsContainer p,
   a {

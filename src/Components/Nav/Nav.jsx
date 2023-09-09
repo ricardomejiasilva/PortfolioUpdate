@@ -1,22 +1,29 @@
 import React from "react";
-import "./Header.css";
-import { Link, useLocation } from "react-router-dom";
+import "./Nav.css";
+import { Link, useLocation, NavLink } from "react-router-dom";
 
-const Header = ({project = false}) => {
+const Nav = () => {
   const { pathname } = useLocation();
-  console.log(pathname);
+
+  function scrollToSection(id) {
+    const section = document.getElementById(id);
+
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
 
   return (
     <div className="container ">
       <nav className="navbar navbar-expand-lg navbarContainer">
         <div className="container-fluid" style={{ padding: "unset" }}>
-          <Link
+          <NavLink
             className="navbar-brand"
             to="/"
             style={{ color: `${pathname !== "/" && "#000"}` }}
           >
             PortFolio<span className="dot">.</span>
-          </Link>
+          </NavLink>
           <button
             className="navbar-toggler"
             type="button"
@@ -31,44 +38,45 @@ const Header = ({project = false}) => {
           <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 menuItems">
               <li className="nav-item">
-                <Link
+                <NavLink
                   className="nav-link notFocus "
                   aria-current="page"
-                  to="#"
+                  to="/"
                   style={{ color: `${pathname !== "/" && "#000"}` }}
                 >
                   Home
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link
+                <NavLink
                   className="nav-link notFocus"
-                  to="#"
+                  to="/#about"
+                  onClick={scrollToSection("about")}
                   style={{ color: `${pathname !== "/" && "#000"}` }}
                 >
-                  Skill
-                </Link>
+                  About
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  to="#projects"
+                  onClick={scrollToSection("project")}
+                  style={{ color: `${pathname !== "/" && "#000"}` }}
+                >
+                  Projects
+                </NavLink>
               </li>
               <li className="nav-item">
                 <a
                   className="nav-link notFocus"
-                  href="#project"
-                  style={{ color: `${pathname !== "/" && "#000"}` }}
-                >
-                  Project
-                </a>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link notFocus"
-                  to="#"
+                  href="mailto: ricardo_mejia1996.com"
                   style={{ color: `${pathname !== "/" && "#000"}` }}
                 >
                   Contact
-                </Link>
+                </a>
               </li>
             </ul>
-            <a href="mailto: ricardo_mejia1996.com">
+            <a href="mailto: ricardo_mejia1996@live.com">
               <button
                 className="btn contactMeBtn"
                 style={{
@@ -89,4 +97,4 @@ const Header = ({project = false}) => {
   );
 };
 
-export default Header;
+export default Nav;
