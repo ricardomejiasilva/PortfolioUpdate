@@ -4,9 +4,10 @@ import MobileApps from "./MobileApps";
 import Web from "./Web";
 import Emails from "./Emails";
 
-const MyWorks = () => {
+const MyWorks = ({projectSection}) => {
+
   return (
-    <div id="project" className="myWorksContainer pad">
+    <div id="project" ref={projectSection} className="myWorksContainer pad">
       <div className="container">
         <h3>My Works</h3>
         <MobileApps />

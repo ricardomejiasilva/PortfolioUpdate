@@ -42,8 +42,8 @@
   color: #0085ff !important;
 }
 
-.nav-link .active {
-  color: white;
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: white !important;
 }
 
 .navbar-nav .nav-link:active {

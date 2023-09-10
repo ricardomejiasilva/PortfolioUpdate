@@ -1,20 +1,23 @@
 import React from "react";
 import "./Nav.css";
-import { Link, useLocation, NavLink } from "react-router-dom";
+import { useLocation, NavLink } from "react-router-dom";
 
 const Nav = () => {
   const { pathname } = useLocation();
 
-  function scrollToSection(id) {
+  const scrollToSection = (id) => {
     const section = document.getElementById(id);
 
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
+    } else {
+      console.log("Section not found, navigating to", id);
+      window.location.hash = id; // This will add the section's ID to the URL's hash
     }
-  }
+  };
 
   return (
-    <div className="container ">
+    <div className="container">
       <nav className="navbar navbar-expand-lg navbarContainer">
         <div className="container-fluid" style={{ padding: "unset" }}>
           <NavLink
@@ -39,7 +42,7 @@ const Nav = () => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 menuItems">
               <li className="nav-item">
                 <NavLink
-                  className="nav-link notFocus "
+                  className="nav-link notFocus"
                   aria-current="page"
                   to="/"
                   style={{ color: `${pathname !== "/" && "#000"}` }}
@@ -48,41 +51,42 @@ const Nav = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink
+                <a
                   className="nav-link notFocus"
-                  to="/#about"
-                  onClick={scrollToSection("about")}
+                  href="/#about"
+                  // onClick={() => scrollToSection("about")}
                   style={{ color: `${pathname !== "/" && "#000"}` }}
                 >
                   About
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  to="#projects"
-                  onClick={scrollToSection("project")}
-                  style={{ color: `${pathname !== "/" && "#000"}` }}
-                >
-                  Projects
-                </NavLink>
+                </a>
               </li>
               <li className="nav-item">
                 <a
                   className="nav-link notFocus"
-                  href="mailto: ricardo_mejia1996.com"
+                  href="/#project"
+                  // onClick={() => scrollToSection("project")}
+                  style={{ color: `${pathname !== "/" && "#000"}` }}
+                >
+                  Projects
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="nav-link notFocus"
+                  href="mailto:ricardo_mejia1996@live.com"
                   style={{ color: `${pathname !== "/" && "#000"}` }}
                 >
                   Contact
                 </a>
               </li>
             </ul>
-            <a href="mailto: ricardo_mejia1996@live.com">
+            <a href="mailto:ricardo_mejia1996@live.com">
               <button
                 className="btn contactMeBtn"
                 style={{
-                  color: `${pathname === "/project" && "#FFF"}`,
+                  color: `${pathname === "/projects" && "#FFF"}`,
                   background: `${
-                    pathname === "/project" &&
+                    pathname === "/projects" &&
                     "linear-gradient(90deg, #31A8FF 0%, #0085FF 100%)"
                   }`,
                 }}

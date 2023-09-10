@@ -15,11 +15,11 @@ const WorksCard = ({ content }) => {
         </div>
         <div className="cardTextContainer">
           <h6>
-            <a href="#">{content.title}</a>
+            <p href="#">{content.title}</p>
           </h6>
           <p>{content.skill}</p>
           <div>
-            <a href="#">View Project</a>
+            <p href="#">View Project</p>
             <img src={rightArrow} alt="" />
           </div>
         </div>
