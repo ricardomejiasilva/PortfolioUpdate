@@ -49,7 +49,8 @@
   height: 40px;
 }
 
-.newsContainer img, .last-container {
+.newsContainer img,
+.last-container {
   width: 130px;
 }
 
@@ -71,8 +72,8 @@
   margin-top: 70px;
 }
 
-
-.workExperienceContainer h5, .workExperienceContainer h4 {
+.workExperienceContainer h5,
+.workExperienceContainer h4 {
   color: #212121;
   font-size: 35px;
   font-style: normal;
@@ -164,7 +165,8 @@
     justify-content: space-between;
     gap: 0px;
   }
-  .newsContainer img, .last-container {
+  .newsContainer img,
+  .last-container {
     width: 100px;
   }
   .last img {
@@ -173,7 +175,8 @@
 }
 
 @media only screen and (max-width: 400px) {
-  .newsContainer img, .last-container {
+  .newsContainer img,
+  .last-container {
     width: 90px;
   }
 

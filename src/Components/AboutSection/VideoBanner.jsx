@@ -1,7 +1,7 @@
 import React from "react";
 import videoBanner from "../../assets/videoImage.png";
 import videoIcon from "../../assets/play.png";
-
+import "./DeveloperSection.css";
 const VideoBanner = () => {
   return (
     <div className="videoBannerContainer">

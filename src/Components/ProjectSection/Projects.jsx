@@ -1,5 +1,5 @@
-import React from "react";
-import "./MyWorks.css";
+import React, {forwardRef} from "react";
+import "./Projects.css";
 import MobileApps from "./MobileApps";
 import Web from "./Web";
 import Emails from "./Emails";
@@ -18,4 +18,4 @@ const MyWorks = ({projectSection}) => {
   );
 };
 
-export default MyWorks;
+export default forwardRef(MyWorks);

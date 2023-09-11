@@ -1,6 +1,8 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import SkillsInfo from "./SkillsInfo";
-import DeveloperSection from "../DeveloperSection/DeveloperSection";
+import VideoBanner from "./VideoBanner";
+import FeaturedOn from "./FeaturedOn";
+import WorkExperiences from "./WorkExperiences";
 
 const Profile = ({ aboutSection }) => {
   return (
@@ -11,11 +13,13 @@ const Profile = ({ aboutSection }) => {
       style={{ marginTop: "130px" }}
     >
       <div className="container ">
-        <DeveloperSection />
+        <VideoBanner />
+        <FeaturedOn />
+        <WorkExperiences />
         <SkillsInfo />
       </div>
     </div>
   );
 };
 
-export default Profile;
+export default forwardRef(Profile);
