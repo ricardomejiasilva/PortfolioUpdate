@@ -49,6 +49,11 @@
   height: 40px;
 }
 
+.forbes {
+  position: relative;
+  top: -2px;
+}
+
 .newsContainer img,
 .last-container {
   width: 130px;
