@@ -76,29 +76,56 @@
 }
 
 .workExpContainer {
-  height: 140px;
+  height: auto;
+  min-height: 200px;
   border-radius: 20px;
   border: 1px solid #dcdce1;
   background: #fff;
   padding: 25px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.workExpContainer:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .workExpContainer h6 {
   color: #0085ff;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 160%; /* 25.6px */
+  font-weight: 600;
+  line-height: 160%;
+  margin-bottom: 8px;
 }
 
 .workExpContainer h5 {
   color: #212121;
-  margin-top: 15px !important;
-  margin-bottom: 2px !important;
-  font-size: 23px !important;
+  margin-top: 0 !important;
+  margin-bottom: 8px !important;
+  font-size: 24px !important;
   text-align: unset;
   font-weight: 700;
-  line-height: 140%; /* 32.2px */
+  line-height: 130%;
+}
+
+.workExpContainer .role {
+  color: #555;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.workExpContainer .impact {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-top: 8px;
+}
+
+.workExpContainer .impact strong {
+  color: #0085ff;
+  font-weight: 600;
 }
 
 .workExpContainer span {

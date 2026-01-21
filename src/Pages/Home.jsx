@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import Nav from "../Components/Nav/Nav";
-import Banner from "../Components/Home/Banner";
 import Profile from "../Components/AboutSection/Profile";
 import MyWorks from "../Components/ProjectSection/Projects";
 import Footer from "../Components/Footer/Footer";
+import FeaturedProject from "../Components/Home/FeaturedProject";
 import "../Components/Home/Home.css";
 
 const Home = () => {
@@ -33,17 +33,26 @@ const Home = () => {
       <div className="banner">
         <Nav />
         <div className="bannerContainer container pad">
-          <h1>
-            Crafting captivating digital experiences that inspire and engage.
-          </h1>
-          <p className="mx-auto">
-            Welcome to my world of mobile and web development, where innovation
-            meets functionality. With a passion for creating seamless user
-            experiences and cutting-edge solutions, I strive to bring ideas to
-            life and leave a lasting impression.
-          </p>
+          <p className="hero-subtitle">Product Leader & Mobile Developer</p>
+          <h1>I build products that scale to millions</h1>
+          <div className="hero-metrics">
+            <div className="metric">
+              <span className="metric-number">2M+</span>
+              <span className="metric-label">Downloads</span>
+            </div>
+            <div className="metric">
+              <span className="metric-number">1B+</span>
+              <span className="metric-label">UGC Views</span>
+            </div>
+            <div className="metric">
+              <span className="metric-number">4.8★</span>
+              <span className="metric-label">App Rating</span>
+              <span className="metric-detail">30K Reviews</span>
+            </div>
+          </div>
         </div>
       </div>
+      <FeaturedProject />
       <Profile aboutSection={aboutSection} />
       <MyWorks projectSection={projectSection} />
       <Footer />

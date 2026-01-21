@@ -6,16 +6,28 @@ import Web from "../../assets/webcard.png";
 const MobileApps = () => {
   const cardContent = [
     {
-      id:"wingai",
+      id: "wingai",
       image: WingAi,
       title: "WingAI",
       skill: "React Native App",
+      metrics: {
+        primary: "2M+",
+        primaryLabel: "Downloads",
+        secondary: "4.8★",
+        secondaryLabel: "Rating",
+      },
     },
     {
-      id:"webstaurantstore",
+      id: "webstaurantstore",
       image: Web,
       title: "WebstaurantStore",
       skill: "React Native App",
+      metrics: {
+        primary: "5K+",
+        primaryLabel: "Daily Receipts",
+        secondary: "Lead",
+        secondaryLabel: "Developer",
+      },
     },
   ];
 
@@ -25,11 +37,10 @@ const MobileApps = () => {
       <div className="row">
         <div className="col-12 col-lg-2"></div>
         {cardContent.map((item, idx) => (
-          <div className=" col-12 col-md-6 col-lg-4" key={idx}>
+          <div className="col-12 col-md-6 col-lg-4" key={idx}>
             <WorksCard content={item} />
           </div>
         ))}
-
         <div className="col-12 col-lg-2"></div>
       </div>
     </div>

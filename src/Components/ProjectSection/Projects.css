@@ -37,14 +37,52 @@
 
 .cardImageContainer {
   height: 284px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
 }
 
 .cardImageContainer img {
-  transition: filter 0.3s; 
+  transition: filter 0.3s, transform 0.3s;
 }
 
-.cardImageContainer img:hover {
+.cardImageContainer:hover img {
   filter: brightness(90%);
+  transform: scale(1.02);
+}
+
+.card-metrics-overlay {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.card-metric {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 8px 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-metric-number {
+  display: block;
+  font-size: 18px;
+  font-weight: 800;
+  color: #0085ff;
+  line-height: 1.2;
+}
+
+.card-metric-label {
+  display: block;
+  font-size: 10px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
 }
 
 .cardTextContainer {
