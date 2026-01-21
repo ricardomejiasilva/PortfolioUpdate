@@ -7,7 +7,7 @@ const FeaturedProject = () => {
     <section className="featured-project">
       <div className="container pad">
         <p className="section-label">Featured Project</p>
-        <h2>My Biggest Accomplishment</h2>
+        <h2>WingAI</h2>
 
         <div className="featured-content">
           <div className="featured-image">
@@ -15,7 +15,6 @@ const FeaturedProject = () => {
           </div>
 
           <div className="featured-info">
-            <h3>WingAI</h3>
             <p className="app-type">AI-Powered Dating Assistant</p>
             <p>
               Built and scaled a consumer mobile app from zero to over 2 million
